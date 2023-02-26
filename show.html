@@ -1,0 +1,61 @@
+<table>
+  <style>
+    table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+  </style>
+  <thead>
+    <tr>
+      <th>Field</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Name</td>
+      <td>{{ ins.name }}</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>{{ ins.age }}</td>
+    </tr>
+    <tr>
+      <td>Weight</td>
+      <td>{{ ins.weight }}</td>
+    </tr>
+    <tr>
+      <td>Temperature</td>
+      <td>89</td>
+    </tr>
+    <tr>
+      <td>Pressure</td>
+      <td>89</td>
+    </tr>
+    <tr>
+      <td>Water Quantity</td>
+      <td>89</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Smart Water Bottle</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			background-image:url("https://thumbs.dreamstime.com/b/water-splash-bottle-21576605.jpg")
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		header {
+			background-color: #4CAF50;
+			color: white;
+			padding: 20px;
+			text-align: center;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+		}
+
+		h1 {
+			font-size: 32px;
+			margin: 0;
+		}
+
+		form {
+			background-color: white;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+			width: 600px;
+			margin: 0 auto;
+			gap: 20px;
+		}
+
+		label {
+			display: block;
+			font-size: 18px;
+			margin-bottom: 10px;
+			font-weight: bold;
+		}
+
+		input[type="text"], input[type="number"] {
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+			margin-bottom: 20px;
+			width: 100%;
+			box-sizing: border-box;
+			font-size: 16px;
+			font-family: Arial, sans-serif;
+			height:50px;
+		}
+
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+			font-family: Arial, sans-serif;
+			transition: background-color 0.3s ease;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Smart Water Bottle</h1>
+	</header>
+
+	<form action=" " method="post">
+		   {% csrf_token %}
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required>
+
+		<label for="age">Age:</label>
+		<input type="number" id="age" name="age" required>
+
+		<label for="weight">Weight (in kg):</label>
+		<input type="number" id="weight" name="weight" required>
+
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
